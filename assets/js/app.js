@@ -67,7 +67,6 @@ if (navigator.geolocation) {
     showMessage("Geolocation is not supported by your browser.");
 }
 
-// Recenter the map on the user's current location
 function recenterMap() {
     if (map && userLatitude && userLongitude) {
         map.flyTo({ center: [userLongitude, userLatitude], zoom: 14 });
@@ -78,11 +77,9 @@ function recenterMap() {
     }
 }
 
-// Generate random nearby vehicle coordinates
 function generateNearbyVehicles(lat, lng, count) {
     const vehicles = [];
     for (let i = 0; i < count; i++) {
-        // Generate a random offset for lat and lng
         const randomLat = lat + (Math.random() * 2 - 1) * RADIUS_DEGREES;
         const randomLng = lng + (Math.random() * 2 - 1) * RADIUS_DEGREES;
 
@@ -94,7 +91,6 @@ function generateNearbyVehicles(lat, lng, count) {
     return vehicles;
 }
 
-// Show rideshare vehicles on the map
 function showNearbyVehicles() {
     if (!map) {
         console.warn("Map is not initialized yet.");
@@ -102,17 +98,14 @@ function showNearbyVehicles() {
         return;
     }
 
-    // If vehicles are already displayed, just return
     if (vehicleMarkers.length > 0) {
         console.info("Vehicles are already shown on the map.");
         showMessage("Vehicles are already shown on the map.");
         return;
     }
 
-    // Generate fake nearby vehicles around the user location
     const rideshareVehicles = generateNearbyVehicles(userLatitude, userLongitude, NUMBER_OF_VEHICLES);
 
-    // Add markers for each rideshare vehicle
     rideshareVehicles.forEach(vehicle => {
         const marker = new mapboxgl.Marker({ color: 'green' })
             .setLngLat(vehicle.coords)
