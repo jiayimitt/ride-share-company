@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="jiayi">
+        <title>SwiftLyft</title>
+        <link rel="stylesheet" href="./assets/css/style.css" media="all">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="./assets/img/alarm_clock.jpg" type="x-icon">
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+        <script src ="assets/js/app.js" type="module"></script>       
+    </head>
+    <body>
+      <header >
+        <div class="container header-title">
+          <div class="logo-container">
+             
+              <h1>SwiftLyft</h1>
+          </div>
+          <nav>
+              <a href="#">Home</a>
+              <a href="#">Services</a>
+              <a href="#">Pricing</a>
+              <a href="#">Contact Us</a>
+          </nav>
+        </div>
+      
+    </header>
+
+    <section class="hero container">
+        <div class="hero-text">
+            <h2>Smarter Rides for Your Busy Life</h2>
+            <p>SwiftLyft is committed to providing fast, safe, and efficient rides. Whether it's your daily commute or a weekend getaway, we've got you covered.</p>
+            <button class="cta-button">Book Now</button>
+        </div>
+        <div class="hero-image">
+            <img src="./assets/img/Rideshare-software.jpg" alt="Rideshare Image">
+        </div>
+    </section>
+
+    <section class="map-section container">
+        <h2>Find Your Current Location</h2>
+        <p>Please allow us to access your location for more accurate pickups.</p>
+        <div id="map"></div>
+        <div class="map-buttons">
+            <button class="recenter-btn map-action-button">Recenter on Me</button>
+            <button class="show-vehicles-btn map-action-button">Show Nearby Vehicles</button>
+        </div>
+        <div class="message-box"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SwiftLyft. All rights reserved.</p>
+    </footer>
+
+    <!-- Mapbox JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+
+    </body>
+</html>

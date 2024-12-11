@@ -1,0 +1,16 @@
+{
+  "name": "ridesharecompany",
+  "version": "1.0.0",
+  "description": "This is a simple digital alarm clock application developed in JavaScript. The clock displays the current local time in a 24-hour format, allows users to set an alarm, and plays a sound when the alarm goes off. The application is hosted on GitHub Pages.",
+  "main": "index.js",
+  "scripts": {
+    "start":"lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "lite-server": "^2.6.1"
+  }
+}
