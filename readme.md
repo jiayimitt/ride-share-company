@@ -24,7 +24,4 @@ SwiftLyft is a fictional rideshare company website that demonstrates how to inte
 - **Local Development Server**: Such as VSCode Live Server or a simple HTTP server to serve files locally.
 
    
-   *Alternatively, you can run a simple local HTTP server:*
-   ```bash
-   cd path/to/your/project
-   python -m http.server 8000
+ 
