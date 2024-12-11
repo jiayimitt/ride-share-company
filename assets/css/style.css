@@ -153,8 +153,16 @@ header nav a:hover {
   margin-top: 20px;
 }
 
-.map-action-button {
+.recenter-btn {
   background: #2980b9;
+}
+
+.show-vehicles-btn {
+  background: #2a9304;
+}
+
+.map-action-button {
+ 
   color: #fff;
   border: none;
   padding: 10px 20px;
