@@ -38,10 +38,6 @@ function onSuccess(position) {
         .setPopup(new mapboxgl.Popup().setHTML("<h3>You are here</h3>"))
         .addTo(map);
 
-    listen(recenterBtn, 'click', recenterMap);
-
-    listen(showVehiclesBtn, 'click', showNearbyVehicles);
-
     showMessage("Your location has been found. You may recenter the map or show nearby vehicles.");
 }
 
@@ -102,3 +98,7 @@ function showNearbyVehicles() {
 
     showMessage(`${rideshareVehicles.length} nearby vehicles displayed.`);
 }
+
+listen(recenterBtn, 'click', recenterMap);
+
+listen(showVehiclesBtn, 'click', showNearbyVehicles);
